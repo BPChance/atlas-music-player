@@ -1,4 +1,4 @@
-import volume from "../assets/volume-2.svg";
+import volume from "../assets/VolumeIcon.svg";
 
 export default function VolumeControls() {
   return (
@@ -11,7 +11,7 @@ export default function VolumeControls() {
         min="0"
         max="100"
         defaultValue="50"
-        className="accent-grey h-[15px] w-[374px] cursor-pointer appearance-none rounded-lg bg-gray-300"
+        className="accent-grey h-[15px] w-[374px] cursor-pointer appearance-none rounded-lg bg-[#D5D7D8]"
       />
     </div>
   );

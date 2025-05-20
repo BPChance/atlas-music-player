@@ -5,8 +5,8 @@ import shuffle from "../assets/shuffle.svg";
 
 export default function PlayControls() {
   return (
-    <div className="flex w-[400px] items-center justify-center gap-8">
-      <p className="h-[22px] w-[19px]">1x</p>
+    <div className="flex w-[400px] items-center justify-between">
+      <p className="h-[22px] w-[19px] text-lg">1x</p>
       <button className="border-none bg-transparent p-0">
         <img src={rewind} alt="rewind" className="h-[24px] w-[24px]" />
       </button>

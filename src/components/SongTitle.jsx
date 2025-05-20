@@ -1,8 +1,8 @@
 export default function SongTitle() {
   return (
     <div className="flex flex-col">
-      <h2 className="text-2xl font-bold text-blue-500">Tidal Drift</h2>
-      <h4 className="text-base">Echoes of the Sea</h4>
+      <h1 className="text-2xl font-bold">Tidal Drift</h1>
+      <p className="text-base">Echoes of the Sea</p>
     </div>
   );
 }
