@@ -5,7 +5,7 @@ import SongTitle from "./SongTitle";
 
 export default function MusicPlayer() {
   return (
-    <div>
+    <div className="flex flex-col items-center gap-6">
       <CoverArt />
       <SongTitle />
       <PlayControls />

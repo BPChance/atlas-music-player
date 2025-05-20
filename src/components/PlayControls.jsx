@@ -17,7 +17,7 @@ export default function PlayControls() {
         <img src={forward} alt="forward" className="h-[24px] w-[24px]" />
       </button>
       <button className="border-none bg-transparent p-0">
-        <img src={shuffle} alt="shuffle" className="h-[24px] w-[24-px]" />
+        <img src={shuffle} alt="shuffle" className="h-[24px] w-[24px]" />
       </button>
     </div>
   );

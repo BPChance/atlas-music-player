@@ -11,7 +11,7 @@ export default function VolumeControls() {
         min="0"
         max="100"
         defaultValue="50"
-        className="accent-grey h-[15px] w-[374px] cursor-pointer appearance-none rounded-lg bg-[#D5D7D8]"
+        className="h-2 w-[374px] cursor-pointer rounded-lg bg-[#D5D7D8] accent-[#64748B]"
       />
     </div>
   );
