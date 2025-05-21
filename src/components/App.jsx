@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="flex h-screen w-screen font-sans">
       <MusicPlayer />
+      {/* <Footer /> */}
     </div>
   );
 }
