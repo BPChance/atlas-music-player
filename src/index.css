@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+  --color-supablue: #052659;
+  --color-supapurp: #765e8d;
+  --color-supapink: #c67486;
+}
