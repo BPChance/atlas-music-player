@@ -12,6 +12,10 @@ type PlayControlsProps = {
   onForward: () => void;
   onShuffle: () => void;
   shuffleOn: boolean;
+  playing: boolean;
+  setPlaying: React.Dispatch<React.SetStateAction<boolean>>;
+  playbackSpeed: 0.5 | 1 | 2;
+  setPlaybackSpeed: React.Dispatch<React.SetStateAction<0.5 | 1 | 2>>;
 };
 
 export default function PlayControls({
@@ -21,16 +25,17 @@ export default function PlayControls({
   onForward,
   onShuffle,
   shuffleOn,
+  playing,
+  setPlaying,
+  playbackSpeed,
+  setPlaybackSpeed,
 }: PlayControlsProps) {
-  const [playbackSpeed, setPlaybackSpeed] = useState<0.5 | 1 | 2>(1);
-  const [isPlaying, setIsPlaying] = useState(false);
-
   const cycleSpeed = () => {
     setPlaybackSpeed((prev) => (prev === 0.5 ? 1 : prev === 1 ? 2 : 0.5));
   };
 
   const togglePlay = () => {
-    setIsPlaying((prev) => !prev);
+    setPlaying((prev) => !prev);
   };
 
   return (
@@ -49,7 +54,7 @@ export default function PlayControls({
 
       <button onClick={togglePlay} className="border-none bg-transparent p-0">
         <img
-          src={isPlaying ? pause : play}
+          src={playing ? pause : play}
           alt="play / pause"
           className="h-12 w-12"
         />

@@ -11,6 +11,12 @@ type CurrentlyPlayingProps = {
   onForward: () => void;
   onShuffle: () => void;
   shuffleOn: boolean;
+  playing: boolean;
+  setPlaying: React.Dispatch<React.SetStateAction<boolean>>;
+  playbackSpeed: 0.5 | 1 | 2;
+  setPlaybackSpeed: React.Dispatch<React.SetStateAction<0.5 | 1 | 2>>;
+  volume: number;
+  setVolume: React.Dispatch<React.SetStateAction<number>>;
 };
 
 export default function CurrentlyPlaying({
@@ -21,6 +27,12 @@ export default function CurrentlyPlaying({
   onForward,
   onShuffle,
   shuffleOn,
+  playing,
+  setPlaying,
+  playbackSpeed,
+  setPlaybackSpeed,
+  volume,
+  setVolume,
 }: CurrentlyPlayingProps) {
   return (
     <div className="flex w-full flex-col items-center justify-center gap-4 md:w-[400px]">
@@ -33,8 +45,12 @@ export default function CurrentlyPlaying({
         onForward={onForward}
         onShuffle={onShuffle}
         shuffleOn={shuffleOn}
+        playing={playing}
+        setPlaying={setPlaying}
+        playbackSpeed={playbackSpeed}
+        setPlaybackSpeed={setPlaybackSpeed}
       />
-      <VolumeControls />
+      <VolumeControls volume={volume} setVolume={setVolume} />
     </div>
   );
 }
