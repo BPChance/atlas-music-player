@@ -1,0 +1,57 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PlayListItem > renders correctly 1`] = `
+<div>
+  <div
+    class="flex w-full items-center justify-between rounded-lg px-4 py-1 bg-supablue dark:bg-supapurp text-supapink shadow-2xl"
+  >
+    <div
+      class="flex max-w-[75%] flex-col"
+    >
+      <p
+        class="font-semibold"
+      >
+        test song
+      </p>
+      <p
+        class="text-sm text-[#94A3B8]"
+      >
+        test artist
+      </p>
+    </div>
+    <p
+      class="shrink-0 pl-4 text-sm whitespace-nowrap text-[#94A3B8]"
+    >
+      2:00
+    </p>
+  </div>
+</div>
+`;
+
+exports[`PlayListItem > renders unselected item 1`] = `
+<div>
+  <div
+    class="flex w-full items-center justify-between rounded-lg px-4 py-1 "
+  >
+    <div
+      class="flex max-w-[75%] flex-col"
+    >
+      <p
+        class="font-semibold"
+      >
+        Another Song
+      </p>
+      <p
+        class="text-sm text-[#94A3B8]"
+      >
+        Another Artist
+      </p>
+    </div>
+    <p
+      class="shrink-0 pl-4 text-sm whitespace-nowrap text-[#94A3B8]"
+    >
+      1:35
+    </p>
+  </div>
+</div>
+`;

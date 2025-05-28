@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SongTitle > renders a song title and artist 1`] = `
+<div>
+  <div
+    class="w-full text-left"
+  >
+    <h1
+      class="text-supapink text-2xl font-bold"
+    >
+      test title
+    </h1>
+    <p
+      class="text-base text-[#94A3B8]"
+    >
+      test artist
+    </p>
+  </div>
+</div>
+`;
+
+exports[`SongTitle > renders correctly with empty artist 1`] = `
+<div>
+  <div
+    class="w-full text-left"
+  >
+    <h1
+      class="text-supapink text-2xl font-bold"
+    >
+      what artist?
+    </h1>
+    <p
+      class="text-base text-[#94A3B8]"
+    />
+  </div>
+</div>
+`;

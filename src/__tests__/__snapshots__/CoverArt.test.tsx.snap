@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CoverArt > renders a coverarturl 1`] = `
+<div>
+  <div
+    class="aspect-square w-full max-w-[400px] overflow-hidden rounded-lg shadow-2xl"
+  >
+    <img
+      alt="placeholder"
+      class="h-full w-full object-cover"
+      src="example"
+    />
+  </div>
+</div>
+`;
+
+exports[`CoverArt > renders nothing when there is no coverarturl 1`] = `
+<div>
+  <div
+    class="aspect-square w-full max-w-[400px] overflow-hidden rounded-lg shadow-2xl"
+  >
+    <img
+      alt="placeholder"
+      class="h-full w-full object-cover"
+    />
+  </div>
+</div>
+`;
