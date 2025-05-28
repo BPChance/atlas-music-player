@@ -1,4 +1,3 @@
-import { useState } from "react";
 import rewind from "../assets/rewind.svg";
 import play from "../assets/play.png";
 import pause from "../assets/pause.png";
