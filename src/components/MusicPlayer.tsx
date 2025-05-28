@@ -19,7 +19,7 @@ export default function MusicPlayer() {
   const [loading, setLoading] = useState(true);
   const [shuffleOn, setShuffleOn] = useState(false);
   const [playing, setPlaying] = useState(false);
-  const [volume, setVolume] = useState(1);
+  const [volume, setVolume] = useState(0.5);
   const [playbackSpeed, setPlaybackSpeed] = useState<0.5 | 1 | 2>(1);
 
   useEffect(() => {
